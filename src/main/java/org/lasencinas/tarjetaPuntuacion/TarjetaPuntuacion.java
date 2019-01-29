@@ -2,18 +2,36 @@ package org.lasencinas.tarjetaPuntuacion;
 
 public class TarjetaPuntuacion {
 
-    String simbolos = "-123456789/X";
+    private int STRIKE = 10;
+    private int CERO = 0;
+    private String pins = "-123456789";
+    private String tarjeta = "";
 
-    public TarjetaPuntuacion() {
-        this.simbolos = null;
+
+    public TarjetaPuntuacion(){};
+
+    public TarjetaPuntuacion(String tarjeta) {
+        this.tarjeta = tarjeta;
     }
 
-    public TarjetaPuntuacion(String simbolos) {
-        this.simbolos = simbolos;
+    public int getStrike() {
+        return this.STRIKE;
     }
 
     public int computarStrike(char strike) {
-        return 10;
+        if (strike == 'X') {
+            return this.getStrike();
+        }else {
+            return this.CERO;
+        }
+    }
+
+    public int computarPins(char pins) {
+        return this.pins.indexOf(pins);
+    }
+
+    public int computarTarjeta() {
+        return 20;
     }
 
 }
