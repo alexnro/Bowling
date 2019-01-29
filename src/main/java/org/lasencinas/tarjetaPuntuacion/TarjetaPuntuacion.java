@@ -4,6 +4,7 @@ public class TarjetaPuntuacion {
 
     private int STRIKE = 10;
     private int CERO = 0;
+    private int SPARE = 10;
     private String pins = "-123456789";
     private String tarjeta = "";
 
@@ -31,7 +32,19 @@ public class TarjetaPuntuacion {
     }
 
     public int computarTarjeta() {
-        return 20;
+        //TODO
+        int resultado = 0;
+
+        for (int i = 0; i < this.pins.length(); i++) {
+            if (this.tarjeta.charAt(i) == this.pins.indexOf(i)) {
+                resultado += Character.getNumericValue(this.tarjeta.charAt(i));
+            }
+        }
+        return resultado;
     }
 
+    public int computarSpare() {
+        //TODO
+        return 10;
+    }
 }

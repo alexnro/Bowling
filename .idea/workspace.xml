@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="396610e7-880d-420d-85d5-fe3c0886b6c7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/lasencinas/tarjetaPuntuacion/TarjetaPuntuacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lasencinas/tarjetaPuntuacion/TarjetaPuntuacion.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/lasencinas/tarjetaPuntuacion/TarjetaPuntuacionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/lasencinas/tarjetaPuntuacion/TarjetaPuntuacionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/lasencinas/tarjetaPuntuacion/TarjetaPuntuacion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/lasencinas/tarjetaPuntuacion/TarjetaPuntuacion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/org/lasencinas/tarjetaPuntuacion/TarjetaPuntuacionTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/lasencinas/tarjetaPuntuacion/TarjetaPuntuacionTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -14,39 +17,57 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/lasencinas/tarjetaPuntuacion/TarjetaPuntuacion.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
-              <folding>
-                <element signature="e#254#255#0" expanded="true" />
-                <element signature="e#291#292#0" expanded="true" />
-                <element signature="e#174#175#0" expanded="true" />
-                <element signature="e#210#211#0" expanded="true" />
-                <element signature="e#476#477#0" expanded="true" />
-                <element signature="e#523#524#0" expanded="true" />
-                <element signature="e#685#686#0" expanded="true" />
-                <element signature="e#704#705#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/org/lasencinas/tarjetaPuntuacion/TarjetaPuntuacionTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="762">
-              <caret line="45" column="52" selection-start-line="45" selection-start-column="52" selection-end-line="45" selection-end-column="52" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/java/org/lasencinas/tarjetaPuntuacion/TarjetaPuntuacion.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="212">
+                  <caret line="46" column="14" selection-start-line="46" selection-start-column="14" selection-end-line="46" selection-end-column="14" />
+                  <folding>
+                    <element signature="e#287#288#0" expanded="true" />
+                    <element signature="e#325#326#0" expanded="true" />
+                    <element signature="e#355#356#0" expanded="true" />
+                    <element signature="e#389#390#0" expanded="true" />
+                    <element signature="e#605#606#0" expanded="true" />
+                    <element signature="e#651#652#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/test/java/org/lasencinas/tarjetaPuntuacion/TarjetaPuntuacionTest.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="314">
+                  <caret line="45" selection-start-line="45" selection-end-line="45" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/test/java/org/lasencinas/tarjetaPuntuacion/TarjetaPuntuacionTest.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="165">
+                  <caret line="40" column="46" selection-start-line="40" selection-start-column="46" selection-end-line="40" selection-end-column="46" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -89,8 +110,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -131,15 +152,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="lasencinas" type="462c0819:PsiDirectoryNode" />
-              <item name="bowling" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Bowling" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Bowling" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="lasencinas" type="462c0819:PsiDirectoryNode" />
               <item name="tarjetaPuntuacion" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -162,15 +174,6 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="lasencinas" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Bowling" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Bowling" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="lasencinas" type="462c0819:PsiDirectoryNode" />
-              <item name="bowling" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Bowling" type="b2602c69:ProjectViewProjectNode" />
@@ -194,7 +197,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548788541290" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548804046319" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -298,20 +301,13 @@
       <workItem from="1548715818278" duration="771000" />
       <workItem from="1548723179410" duration="1732000" />
       <workItem from="1548761694196" duration="943000" />
-      <workItem from="1548774635261" duration="9034000" />
+      <workItem from="1548774635261" duration="9104000" />
+      <workItem from="1548791169943" duration="1280000" />
+      <workItem from="1548795015907" duration="3163000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TarjetaPuntuacionTest - 2019.01.29 at 18h 10m 05s.xml">
-      <configuration name="TarjetaPuntuacionTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TarjetaPuntuacionTest - 2019.01.29 at 18h 22m 25s.xml">
-      <configuration name="TarjetaPuntuacionTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TarjetaPuntuacionTest_computarPins - 2019.01.29 at 18h 54m 09s.xml">
-      <configuration name="TarjetaPuntuacionTest.computarPins" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TarjetaPuntuacionTest - 2019.01.29 at 18h 54m 13s.xml">
       <configuration name="TarjetaPuntuacionTest" configurationId="JUnit" />
     </history-entry>
@@ -333,15 +329,24 @@
     <history-entry file="TarjetaPuntuacionTest - 2019.01.29 at 19h 29m 00s.xml">
       <configuration name="TarjetaPuntuacionTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TarjetaPuntuacionTest - 2019.01.29 at 20h 52m 19s.xml">
+      <configuration name="TarjetaPuntuacionTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TarjetaPuntuacionTest - 2019.01.29 at 21h 03m 04s.xml">
+      <configuration name="TarjetaPuntuacionTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TarjetaPuntuacionTest - 2019.01.30 at 00h 18m 27s.xml">
+      <configuration name="TarjetaPuntuacionTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12480000" />
+    <option name="totallyTimeSpent" value="16993000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25033557" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.2536913" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -350,7 +355,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.26203966" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.43909347" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -415,27 +420,9 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Bowling.iml" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/lasencinas/throwFrame/throwFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/org/lasencinas/throwFrame/ThrowFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/lasencinas/bowling/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/lasencinas/throwFrame/throwFrame.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/org/lasencinas/throwFrame/ThrowFrame.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/lasencinas/bowling/Game.java" />
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
@@ -446,16 +433,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/org/lasencinas/bowling/GameTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/org/lasencinas/bowling/GameTest.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_202/src.zip!/java/lang/String.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="157">
@@ -469,29 +447,27 @@
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/lasencinas/tarjetaPuntuacion/TarjetaPuntuacion.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/org/lasencinas/tarjetaPuntuacion/TarjetaPuntuacionTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
+        <state relative-caret-position="314">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
           <folding>
-            <element signature="e#254#255#0" expanded="true" />
-            <element signature="e#291#292#0" expanded="true" />
-            <element signature="e#174#175#0" expanded="true" />
-            <element signature="e#210#211#0" expanded="true" />
-            <element signature="e#476#477#0" expanded="true" />
-            <element signature="e#523#524#0" expanded="true" />
-            <element signature="e#685#686#0" expanded="true" />
-            <element signature="e#704#705#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/org/lasencinas/tarjetaPuntuacion/TarjetaPuntuacionTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/lasencinas/tarjetaPuntuacion/TarjetaPuntuacion.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="762">
-          <caret line="45" column="52" selection-start-line="45" selection-start-column="52" selection-end-line="45" selection-end-column="52" />
+        <state relative-caret-position="212">
+          <caret line="46" column="14" selection-start-line="46" selection-start-column="14" selection-end-line="46" selection-end-column="14" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#287#288#0" expanded="true" />
+            <element signature="e#325#326#0" expanded="true" />
+            <element signature="e#355#356#0" expanded="true" />
+            <element signature="e#389#390#0" expanded="true" />
+            <element signature="e#605#606#0" expanded="true" />
+            <element signature="e#651#652#0" expanded="true" />
           </folding>
         </state>
       </provider>

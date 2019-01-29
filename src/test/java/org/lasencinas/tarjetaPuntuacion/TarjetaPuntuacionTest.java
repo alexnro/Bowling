@@ -23,7 +23,7 @@ public class TarjetaPuntuacionTest {
     }
 
     @Test
-    public void computarPins() {
+    public void computarPinsTest() {
 
         String pins = "-123456789";
         assertEquals(0, tarjeta.computarPins('-'));
@@ -38,11 +38,17 @@ public class TarjetaPuntuacionTest {
     }
 
     @Test
-    public void computarTarjetaVeinteBolas() {
+    public void computarTarjetaVeinteBolasTest() {
 
-        String tarjetaVeinteBolas = "111111111111111111110";
+        String tarjetaVeinteBolas = "11111111111111111111";
         tarjeta = new TarjetaPuntuacion(tarjetaVeinteBolas);
 
         assertEquals(20, tarjeta.computarTarjeta());
+    }
+
+    @Test
+    public void computarSpareTest() {
+
+        assertEquals(10, tarjeta.computarSpare());
     }
 }
