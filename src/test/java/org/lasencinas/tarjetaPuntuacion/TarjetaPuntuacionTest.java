@@ -54,4 +54,13 @@ public class TarjetaPuntuacionTest {
         assertEquals(10, tarjeta.computarSpare('/'));
         assertEquals(0, tarjeta.computarSpare('6'));
     }
+
+    //Test failed
+    @Test
+    public void computarTarjetaTest() {
+        String pins = "12345123451234512345";
+        int total = 60;
+
+        assertEquals(total, tarjeta.computarTarjeta(pins));
+    }
 }
