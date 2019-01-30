@@ -27,6 +27,14 @@ public class TarjetaPuntuacion {
         }
     }
 
+    public boolean isStrike(char punto) {
+        if (punto == 'X') {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
     public int computarStrike(char strike) {
         if (strike == 'X') {
             return this.getStrike();
@@ -49,10 +57,13 @@ public class TarjetaPuntuacion {
                 if (puntuacion.indexOf(punto) != -1) {
                     total += this.pins.indexOf(punto);
                 }
-            } else {
+            } else if (isSpare(punto)) {
                 char spare = puntuacion.charAt(bola + 1);
                 char pinAterior = puntuacion.charAt(bola - 1);
                 total += 10 + this.pins.indexOf(spare) - this.pins.indexOf(pinAterior);
+            } else if (isStrike(punto)) {
+                //TODO
+                ;
             }
         }
         return total;
