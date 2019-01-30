@@ -32,9 +32,11 @@ public class TarjetaPuntuacionTest {
             assertEquals(i, tarjeta.computarPins(pins.charAt(i)));
         }
 
-//        for(Integer i = 1; i <= 9; i++) {
-//            assertEquals(i.intValue(), tarjeta.computarPins(i.toString()));
-//        }
+        /*Other way to write de test
+        for(Integer i = 1; i <= 9; i++) {
+            assertEquals(i.intValue(), tarjeta.computarPins(i.toString()));
+        }
+        */
     }
 
     @Test
