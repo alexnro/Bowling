@@ -51,17 +51,31 @@ public class TarjetaPuntuacionTest {
     @Test
     public void computarSpareTest() {
 
-        assertEquals(10, tarjeta.computarSpare("7/"));
-        assertEquals(0, tarjeta.computarSpare("23"));
-        assertEquals(0, tarjeta.computarSpare("/2"));
+        assertEquals(10, tarjeta.computarSpare('/'));
+        assertEquals(0, tarjeta.computarSpare('2'));
+        assertEquals(0, tarjeta.computarSpare('-'));
     }
 
     @Test
-    public void computarTarjetaTestSoloPins() {
+    public void computarTarjetaSoloPinsTest() {
 
         String puntuacion = "2716-82734618-458144";
-        tarjeta = new TarjetaPuntuacion(puntuacion);
 
         assertEquals(81, tarjeta.computarTarjeta(puntuacion));
+    }
+
+    @Test
+    public void isSpareTest() {
+
+        assertEquals(true, tarjeta.isSpare('/'));
+        assertEquals(false, tarjeta.isSpare('5'));
+    }
+
+    @Test
+    public void computarTarjetaSpareTest() {
+
+        String puntuacion = "729-34247/3142414581";
+
+        assertEquals(77, tarjeta.computarTarjeta(puntuacion));
     }
 }
