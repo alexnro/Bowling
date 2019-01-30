@@ -38,7 +38,16 @@ public class TarjetaPuntuacion {
 
     public int computarTarjeta(String tarjeta) {
         //TODO
-        return 0;
+        //Doesn't work
+        int total = 0;
+
+        for (int i = 0, len = tarjeta.length(); i < len; i++) {
+            char pin = tarjeta.charAt(i);
+            if (tarjeta.indexOf(pin) != -1) {
+                total += i;
+            }
+        }
+        return total;
     }
 
     public int computarSpare(char spare) {
