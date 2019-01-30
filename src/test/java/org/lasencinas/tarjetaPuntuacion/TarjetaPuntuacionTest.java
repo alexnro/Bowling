@@ -45,7 +45,7 @@ public class TarjetaPuntuacionTest {
         String tarjetaVeinteBolas = "11111111111111111111";
         tarjeta = new TarjetaPuntuacion(tarjetaVeinteBolas);
 
-        assertEquals(20, tarjeta.computarTarjetaVeinteBolas());
+        assertEquals(20, tarjeta.computarTarjeta(tarjetaVeinteBolas));
     }
 
     @Test
@@ -54,5 +54,14 @@ public class TarjetaPuntuacionTest {
         assertEquals(10, tarjeta.computarSpare("7/"));
         assertEquals(0, tarjeta.computarSpare("23"));
         assertEquals(0, tarjeta.computarSpare("/2"));
+    }
+
+    @Test
+    public void computarTarjetaTestSoloPins() {
+
+        String puntuacion = "2716-82734618-458144";
+        tarjeta = new TarjetaPuntuacion(puntuacion);
+
+        assertEquals(81, tarjeta.computarTarjeta(puntuacion));
     }
 }
