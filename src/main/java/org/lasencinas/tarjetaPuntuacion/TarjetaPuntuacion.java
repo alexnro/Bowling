@@ -19,6 +19,14 @@ public class TarjetaPuntuacion {
         return this.STRIKE;
     }
 
+    public boolean isSpare(char punto) {
+        if (punto == '/') {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
     public int computarStrike(char strike) {
         if (strike == 'X') {
             return this.getStrike();
@@ -37,16 +45,22 @@ public class TarjetaPuntuacion {
 
         for (int bola = 0; bola < puntuacion.length(); bola++) {
             char punto = puntuacion.charAt(bola);
-            if (puntuacion.indexOf(punto) != -1) {
-                total += this.pins.indexOf(punto);
+            if (!isSpare(punto)) {
+                if (puntuacion.indexOf(punto) != -1) {
+                    total += this.pins.indexOf(punto);
+                }
+            } else {
+                char spare = puntuacion.charAt(bola + 1);
+                char pinAterior = puntuacion.charAt(bola - 1);
+                total += 10 + this.pins.indexOf(spare) - this.pins.indexOf(pinAterior);
             }
         }
         return total;
     }
 
-    public int computarSpare(String frame) {
+    public int computarSpare(char spare) {
         try {
-            if (frame.charAt(1) == '/') {
+            if (spare == '/') {
                 return this.SPARE;
             } else {
                 return this.CERO;
