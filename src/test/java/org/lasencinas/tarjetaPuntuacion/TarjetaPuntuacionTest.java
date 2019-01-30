@@ -78,4 +78,28 @@ public class TarjetaPuntuacionTest {
 
         assertEquals(77, tarjeta.computarTarjeta(puntuacion));
     }
+
+    //Test failed
+    @Test
+    public void computarTarjetaSpareTest2() {
+
+        String puntuacion = "5/5/5/5/5/5/5/5/5/5/5";
+
+        assertEquals(150, tarjeta.computarTarjeta(puntuacion));
+    }
+
+    @Test
+    public void computarTarjetaStrikeTest() {
+
+        String puntuacion = "81273463X4180518134";
+
+        assertEquals(84, tarjeta.computarTarjeta(puntuacion));
+    }
+
+    @Test
+    public void isStrikeTest() {
+        assertEquals(true, tarjeta.isStrike('X'));
+        assertEquals(false, tarjeta.isStrike('6'));
+    }
+
 }
