@@ -31,9 +31,17 @@ public class TarjetaPuntuacion {
         return this.pins.indexOf(pins);
     }
 
-    //Temporal method
-    public int computarTarjetaVeinteBolas() {
-        return 20;
+    public int computarTarjeta(String puntuacion) {
+
+        int total = 0;
+
+        for (int bola = 0; bola < puntuacion.length(); bola++) {
+            char punto = puntuacion.charAt(bola);
+            if (puntuacion.indexOf(punto) != -1) {
+                total += this.pins.indexOf(punto);
+            }
+        }
+        return total;
     }
 
     public int computarSpare(String frame) {
