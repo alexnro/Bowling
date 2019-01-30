@@ -36,24 +36,14 @@ public class TarjetaPuntuacion {
         return 20;
     }
 
-    public int computarTarjeta(String tarjeta) {
-        //TODO
-        //Doesn't work
-        int total = 0;
-
-        for (int i = 0, len = tarjeta.length(); i < len; i++) {
-            char pin = tarjeta.charAt(i);
-            if (tarjeta.indexOf(pin) != -1) {
-                total += i;
+    public int computarSpare(String frame) {
+        try {
+            if (frame.charAt(1) == '/') {
+                return this.SPARE;
+            } else {
+                return this.CERO;
             }
-        }
-        return total;
-    }
-
-    public int computarSpare(char spare) {
-        if (spare == '/') {
-            return this.SPARE;
-        }else {
+        } catch (StringIndexOutOfBoundsException e) {
             return this.CERO;
         }
     }
