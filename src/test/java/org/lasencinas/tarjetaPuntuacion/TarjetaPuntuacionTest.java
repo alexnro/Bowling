@@ -43,12 +43,13 @@ public class TarjetaPuntuacionTest {
         String tarjetaVeinteBolas = "11111111111111111111";
         tarjeta = new TarjetaPuntuacion(tarjetaVeinteBolas);
 
-        assertEquals(20, tarjeta.computarTarjeta());
+        assertEquals(20, tarjeta.computarTarjetaVeinteBolas());
     }
 
     @Test
     public void computarSpareTest() {
 
-        assertEquals(10, tarjeta.computarSpare());
+        assertEquals(10, tarjeta.computarSpare('/'));
+        assertEquals(0, tarjeta.computarSpare('6'));
     }
 }
