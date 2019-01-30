@@ -31,20 +31,21 @@ public class TarjetaPuntuacion {
         return this.pins.indexOf(pins);
     }
 
-    public int computarTarjeta() {
-        //TODO
-        int resultado = 0;
-
-        for (int i = 0; i < this.pins.length(); i++) {
-            if (this.tarjeta.charAt(i) == this.pins.indexOf(i)) {
-                resultado += Character.getNumericValue(this.tarjeta.charAt(i));
-            }
-        }
-        return resultado;
+    //Temporal method
+    public int computarTarjetaVeinteBolas() {
+        return 20;
     }
 
-    public int computarSpare() {
+    public int computarTarjeta(String tarjeta) {
         //TODO
-        return 10;
+        return 0;
+    }
+
+    public int computarSpare(char spare) {
+        if (spare == '/') {
+            return this.SPARE;
+        }else {
+            return this.CERO;
+        }
     }
 }
