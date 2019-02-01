@@ -102,4 +102,17 @@ public class TarjetaPuntuacionTest {
         assertEquals(false, tarjeta.isStrike('6'));
     }
 
+    @Test
+    public void computarTarjetaAllStrikeTest() {
+
+        String puntuacion = "XXXXXXXXXXXX";
+
+        assertEquals(300, tarjeta.computarTarjeta(puntuacion));
+    }
+
+    @Test
+    public void strikEnUltimasPosiciones() {
+
+        assertEquals(30, tarjeta.strikeFinal('X', 'X', 'X'));
+    }
 }
