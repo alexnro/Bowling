@@ -7,6 +7,7 @@ public class TarjetaPuntuacion {
     private int SPARE = 10;
     private String pins = "-123456789";
     private String tarjeta = "";
+    private int puntuacionTotal = 0;
 
 
     public TarjetaPuntuacion(){};
@@ -48,31 +49,32 @@ public class TarjetaPuntuacion {
     }
 
     public int computarTarjeta(String puntuacion) {
-
-        int total = 0;
-
+        
         for (int bola = 0; bola < puntuacion.length(); bola++) {
             char punto = puntuacion.charAt(bola);
-            if ((bola == puntuacion.length()-1) && (puntuacion.charAt(bola-1) == '/')){
+            if ((bola == puntuacion.length()-1) && (isSpare(puntuacion.charAt(bola-1)))){
+                break;
+            } else if ((bola == puntuacion.length()-1) && (isStrike(puntuacion.charAt(bola-2)))) {
+                strikeFinal(punto, puntuacion.charAt(bola+1), puntuacion.charAt(bola+2));
                 break;
             }
             if (isSpare(punto)) {
                 char spare = puntuacion.charAt(bola + 1);
                 char pinAterior = puntuacion.charAt(bola - 1);
-                total += 10 + this.pins.indexOf(spare) - this.pins.indexOf(pinAterior);
+                this.puntuacionTotal += 10 + this.pins.indexOf(spare) - this.pins.indexOf(pinAterior);
             } else if (isStrike(punto)) {
                 char proximoPrimerPin = puntuacion.charAt(bola + 1);
                 char proximoSegundoPin = puntuacion.charAt(bola + 2);
                 char pinAterior = puntuacion.charAt(bola - 1);
-                total += 10 + this.pins.indexOf(proximoPrimerPin) + this.pins.indexOf(proximoSegundoPin);
+                this.puntuacionTotal += 10 + this.pins.indexOf(proximoPrimerPin) + this.pins.indexOf(proximoSegundoPin);
             }
             else {
                 if (puntuacion.indexOf(punto) != -1) {
-                    total += this.pins.indexOf(punto);
+                    this.puntuacionTotal += this.pins.indexOf(punto);
                 }
             }
         }
-        return total;
+        return this.puntuacionTotal;
     }
 
     public int computarSpare(char spare) {
@@ -85,5 +87,14 @@ public class TarjetaPuntuacion {
         } catch (StringIndexOutOfBoundsException e) {
             return this.CERO;
         }
+    }
+
+    public int strikeFinal(char punto, char puntuacionSiguiente, char puntuacionFinal) {
+        if ((isStrike(puntuacionSiguiente)) && (isStrike(puntuacionFinal))) {
+            this.puntuacionTotal += 30;
+        } else if (isStrike(puntuacionSiguiente)) {
+            //TODO
+        }
+        return this.puntuacionTotal;
     }
 }
