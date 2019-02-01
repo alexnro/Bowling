@@ -36,18 +36,6 @@ public class TarjetaPuntuacion {
         }
     }
 
-    public int computarStrike(char strike) {
-        if (strike == 'X') {
-            return this.getStrike();
-        }else {
-            return this.CERO;
-        }
-    }
-
-    public int computarPins(char pins) {
-        return this.pins.indexOf(pins);
-    }
-
     public int computarTarjeta(String puntuacion) {
         
         for (int bola = 0; bola < puntuacion.length(); bola++) {
@@ -77,23 +65,12 @@ public class TarjetaPuntuacion {
         return this.puntuacionTotal;
     }
 
-    public int computarSpare(char spare) {
-        try {
-            if (spare == '/') {
-                return this.SPARE;
-            } else {
-                return this.CERO;
-            }
-        } catch (StringIndexOutOfBoundsException e) {
-            return this.CERO;
-        }
-    }
-
     public int strikeFinal(char punto, char puntuacionSiguiente, char puntuacionFinal) {
         if ((isStrike(puntuacionSiguiente)) && (isStrike(puntuacionFinal))) {
             this.puntuacionTotal += 30;
         } else if (isStrike(puntuacionSiguiente)) {
             //TODO
+
         }
         return this.puntuacionTotal;
     }
