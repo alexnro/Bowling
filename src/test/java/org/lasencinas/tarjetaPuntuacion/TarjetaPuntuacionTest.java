@@ -91,9 +91,9 @@ public class TarjetaPuntuacionTest {
     @Test
     public void computarTarjetaStrikeTest() {
 
-        String puntuacion = "81273463X4180518134";
+        String puntuacion = "813641X184527X5216";
 
-        assertEquals(84, tarjeta.computarTarjeta(puntuacion));
+        assertEquals(100, tarjeta.computarTarjeta(puntuacion));
     }
 
     @Test
