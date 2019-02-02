@@ -47,7 +47,6 @@ public class TarjetaPuntuacionTest {
         assertEquals(77, tarjeta.computarTarjeta(puntuacion));
     }
 
-    //Test failed
     @Test
     public void computarTarjetaSpareTest2() {
 
