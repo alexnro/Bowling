@@ -2,7 +2,7 @@
 Java exercise for practice OOP in Java
 
 
-## Lógica del negocio o reglas del juego
+## Rules and logic
 Create a program, which, given a valid sequence of rolls for one line of American Ten-Pin Bowling, produces the total score for the game. This is a summary of the rules of the game:
 Each game, or “line” of bowling, includes ten turns, or “frames” for the bowler.
 
@@ -18,7 +18,7 @@ If he gets a spare or strike in the last (tenth) frame, the bowler gets to throw
 
 The game score is the total of all frame scores.
 
-## Requisitos funcionales: qué NO hace el programa
+## Functional requeriments: what DOESN'T do the program
 Here are some things that the program will not do:
 
 We will not check for valid rolls.
@@ -27,7 +27,7 @@ We will not check for correct number of rolls and frames.
 
 We will not provide scores for intermediate frames.
 
-## Casos test
+## Test cases
 The input is a scorecard from a finished bowling game, where “X” stands for a strike, “-” for no pins bowled, and “/” means a spare. Otherwise figures 1-9 indicate how many pins were knocked down in that throw.
 
 Sample games:
