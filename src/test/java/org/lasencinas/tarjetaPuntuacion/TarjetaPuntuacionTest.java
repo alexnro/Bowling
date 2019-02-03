@@ -76,10 +76,4 @@ public class TarjetaPuntuacionTest {
 
         assertEquals(300, tarjeta.computarTarjeta(puntuacion));
     }
-
-    @Test
-    public void strikEnUltimasPosiciones() {
-
-        assertEquals(30, tarjeta.strikeFinal('X', 'X', 'X'));
-    }
 }
