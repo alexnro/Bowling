@@ -40,10 +40,11 @@ public class TarjetaPuntuacion {
         
         for (int bola = 0; bola < puntuacion.length(); bola++) {
             char punto = puntuacion.charAt(bola);
+
             if ((bola == puntuacion.length()-1) && (isSpare(puntuacion.charAt(bola-1)))){
                 break;
             } else if ((bola == puntuacion.length()-1) && (isStrike(puntuacion.charAt(bola-2)))) {
-                strikeFinal(punto, puntuacion.charAt(bola+1), puntuacion.charAt(bola+2));
+                computeStrike(bola, puntuacion);
                 break;
             }
             if (isSpare(punto)) {
@@ -51,10 +52,7 @@ public class TarjetaPuntuacion {
                 char pinAterior = puntuacion.charAt(bola - 1);
                 this.puntuacionTotal += 10 + this.pins.indexOf(spare) - this.pins.indexOf(pinAterior);
             } else if (isStrike(punto)) {
-                char proximoPrimerPin = puntuacion.charAt(bola + 1);
-                char proximoSegundoPin = puntuacion.charAt(bola + 2);
-                char pinAterior = puntuacion.charAt(bola - 1);
-                this.puntuacionTotal += 10 + this.pins.indexOf(proximoPrimerPin) + this.pins.indexOf(proximoSegundoPin);
+                computeStrike(bola, puntuacion);
             }
             else {
                 if (puntuacion.indexOf(punto) != -1) {
@@ -65,13 +63,23 @@ public class TarjetaPuntuacion {
         return this.puntuacionTotal;
     }
 
-    public int strikeFinal(char punto, char puntuacionSiguiente, char puntuacionFinal) {
-        if ((isStrike(puntuacionSiguiente)) && (isStrike(puntuacionFinal))) {
-            this.puntuacionTotal += 30;
-        } else if (isStrike(puntuacionSiguiente)) {
-            //TODO
+    public int computeStrike(int bola, String puntuacion) {
 
+        try {
+            if ((puntuacion.charAt(bola+1) == 'X') && (puntuacion.charAt(bola+2) == 'X')) {
+                this.puntuacionTotal += this.STRIKE * 3;
+            } else if (((puntuacion.charAt(bola+1) == 'X') && (puntuacion.charAt(bola+2) != 'X'))) {
+                this.puntuacionTotal += this.STRIKE * 2;
+            } else {
+                char proximoPrimerPin = puntuacion.charAt(bola + 1);
+                char proximoSegundoPin = puntuacion.charAt(bola + 2);
+                this.puntuacionTotal += 10 + this.pins.indexOf(proximoPrimerPin) + this.pins.indexOf(proximoSegundoPin);
+                return this.puntuacionTotal;
+            }
+        } catch (StringIndexOutOfBoundsException e) {
+            return this.CERO;
+        } finally {
+            return this.puntuacionTotal;
         }
-        return this.puntuacionTotal;
     }
 }
