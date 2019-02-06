@@ -20,6 +20,10 @@ public class TarjetaPuntuacion {
         return this.STRIKE;
     }
 
+    public int getSpare() {
+        return this.SPARE;
+    }
+
     public boolean isSpare(char punto) {
         if (punto == '/') {
             return true;
@@ -50,7 +54,7 @@ public class TarjetaPuntuacion {
             if (isSpare(punto)) {
                 char spare = puntuacion.charAt(bola + 1);
                 char pinAterior = puntuacion.charAt(bola - 1);
-                this.puntuacionTotal += 10 + this.pins.indexOf(spare) - this.pins.indexOf(pinAterior);
+                this.puntuacionTotal += getSpare() + this.pins.indexOf(spare) - this.pins.indexOf(pinAterior);
             } else if (isStrike(punto)) {
                 computeStrike(bola, puntuacion);
             }
