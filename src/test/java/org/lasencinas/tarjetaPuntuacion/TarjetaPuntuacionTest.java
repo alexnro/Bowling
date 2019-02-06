@@ -76,4 +76,13 @@ public class TarjetaPuntuacionTest {
 
         assertEquals(300, tarjeta.computarTarjeta(puntuacion));
     }
+
+    @Test
+    public void computarStrikeTest() {
+
+        String puntuacion = "1281314/531/XX81240";
+
+        assertEquals(121, tarjeta.computarTarjeta(puntuacion));
+
+    }
 }
