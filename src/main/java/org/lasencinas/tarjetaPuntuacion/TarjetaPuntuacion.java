@@ -52,9 +52,7 @@ public class TarjetaPuntuacion {
                 break;
             }
             if (isSpare(punto)) {
-                char spare = puntuacion.charAt(bola + 1);
-                char pinAterior = puntuacion.charAt(bola - 1);
-                this.puntuacionTotal += getSpare() + this.pins.indexOf(spare) - this.pins.indexOf(pinAterior);
+                computeSpare(bola, puntuacion);
             } else if (isStrike(punto)) {
                 computeStrike(bola, puntuacion);
             }
@@ -64,6 +62,13 @@ public class TarjetaPuntuacion {
                 }
             }
         }
+        return this.puntuacionTotal;
+    }
+
+    public int computeSpare(int bola, String puntuacion) {
+        char spare = puntuacion.charAt(bola + 1);
+        char pinAterior = puntuacion.charAt(bola - 1);
+        this.puntuacionTotal += getSpare() + this.pins.indexOf(spare) - this.pins.indexOf(pinAterior);
         return this.puntuacionTotal;
     }
 
