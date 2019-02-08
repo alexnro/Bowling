@@ -68,7 +68,11 @@ public class TarjetaPuntuacion {
     public int computeSpare(int bola, String puntuacion) {
         char spare = puntuacion.charAt(bola + 1);
         char pinAterior = puntuacion.charAt(bola - 1);
-        this.puntuacionTotal += getSpare() + this.pins.indexOf(spare) - this.pins.indexOf(pinAterior);
+        if (spare == 'X') {
+            this.puntuacionTotal += getSpare() + getStrike() - this.pins.indexOf(pinAterior);
+        } else {
+            this.puntuacionTotal += getSpare() + this.pins.indexOf(spare) - this.pins.indexOf(pinAterior);
+        }
         return this.puntuacionTotal;
     }
 
@@ -78,7 +82,8 @@ public class TarjetaPuntuacion {
             if ((puntuacion.charAt(bola+1) == 'X') && (puntuacion.charAt(bola+2) == 'X')) {
                 this.puntuacionTotal += this.STRIKE * 3;
             } else if (((puntuacion.charAt(bola+1) == 'X') && (puntuacion.charAt(bola+2) != 'X'))) {
-                this.puntuacionTotal += this.STRIKE * 2;
+                char proximoSegundoPin = puntuacion.charAt(bola + 2);
+                this.puntuacionTotal += this.STRIKE * 2 + this.pins.indexOf(proximoSegundoPin);
             } else {
                 char proximoPrimerPin = puntuacion.charAt(bola + 1);
                 char proximoSegundoPin = puntuacion.charAt(bola + 2);
