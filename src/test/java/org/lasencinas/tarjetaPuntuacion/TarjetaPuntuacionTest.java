@@ -80,7 +80,7 @@ public class TarjetaPuntuacionTest {
     @Test
     public void computarStrikeTest() {
 
-        String puntuacion = "1281314/531/XX81240";
+        String puntuacion = "1281314/531/XX8124";
 
         assertEquals(121, tarjeta.computarTarjeta(puntuacion));
 
