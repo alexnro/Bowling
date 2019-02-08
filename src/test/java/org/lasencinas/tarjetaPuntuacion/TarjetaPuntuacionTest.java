@@ -85,4 +85,20 @@ public class TarjetaPuntuacionTest {
         assertEquals(121, tarjeta.computarTarjeta(puntuacion));
 
     }
+
+    @Test
+    public void computarTresStrikes() {
+
+        String puntuacion = "7/XXX71XXX729/8";
+
+        assertEquals(206, tarjeta.computarTarjeta(puntuacion));
+    }
+
+    @Test
+    public void computarSpareFinal() {
+
+        String puntuacion = "XX81639/X8172348/X";
+
+        assertEquals(149, tarjeta.computarTarjeta(puntuacion));
+    }
 }
